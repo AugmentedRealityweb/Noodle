@@ -27,10 +27,10 @@
       margin-bottom: 50px; /* Spațiere între model și butonul de navigare */
     }
  model-viewer {
-      width: 250px;
+      width: 200px;
       height: 200px;
       margin: 0 auto;
-      border-radius: 10px;
+      border-radius: 20px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 .ar-button {
