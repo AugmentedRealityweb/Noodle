@@ -28,9 +28,9 @@
     }
  model-viewer {
       width: 250px;
-      height: 250px;
+      height: 200px;
       margin: 0 auto;
-      border-radius: 20px;
+      border-radius: 10px;
       box-shadow: 0 4px 8px rgba(0,0,0,0.2);
     }
 .ar-button {
@@ -86,7 +86,6 @@
       max-camera-orbit="auto 80deg auto">
       <button slot="ar-button" class="ar-button">Activează modul AR</button>
     </model-viewer>
-    <p>Noodle</p>
   </div>
   <a href="https://augmentedrealityweb.github.io/toate-produsele/" class="back-link">Înapoi la meniul principal</a>
 </div>
