@@ -72,8 +72,8 @@
 <div class="model-container">
   <div class="model-section">
     <model-viewer
-      src="noodle.glb"
-      ios-src="noodle.usdz"
+      src="vid1.mp4"
+      ios-src="vid1.mp4"
       ar
       ar-modes="webxr scene-viewer quick-look"
       camera-controls
