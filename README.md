@@ -22,19 +22,24 @@
     <input type="text" id="userInput" placeholder="Type your message here..." />
     <button onclick="sendMessage()">Send</button>
 
-    <script>
-        async function sendMessage() {
-            const userInput = document.getElementById('userInput').value;
-            const response = await fetch('https://7a33e74f-aec9-4287-b712-b754d5384964-00-2qz0sbny3vwzg.kirk.replit.dev/webhook', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ message: userInput })
-            });
-            const data = await response.json();
-            document.getElementById('chatbox').innerHTML += `<p><strong>You:</strong> ${userInput}</p>`;
-            document.getElementById('chatbox').innerHTML += `<p><strong>Bot:</strong> ${data.response}</p>`;
-            document.getElementById('userInput').value = '';
-        }
-    </script>
+   <script defer src="https://openai-widget.web.app/ChatComponent.bundle.js"></script>
+<script>
+  document.addEventListener('DOMContentLoaded', function() {
+    // Check if the chat container exists
+    var chatContainer = document.getElementById('chat-container');
+    // If the chat container doesn't exist, create it
+    if (!chatContainer) {
+      chatContainer = document.createElement('div');
+      chatContainer.id = 'chat-container';
+      document.body.appendChild(chatContainer);
+    }
+    // Initialize the Chat component
+    if (window.ChatComponent) {
+      ChatComponent.init('2mcfi6tJjQtthDmjXRUL','#chat-container');
+    } else {
+      console.error('ChatComponent is not available');
+    }
+  });
+</script>
 </body>
 </html>
